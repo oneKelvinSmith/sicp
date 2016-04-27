@@ -1,20 +1,18 @@
 # sicp
 
-FIXME: description
+A place to work through the examples in SICP
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from https://github.com/oneKelvinSmith/sicp
 
 ## Usage
-
-FIXME: explanation
+...
 
     $ java -jar sicp-0.1.0-standalone.jar [args]
 
 ## Options
-
-FIXME: listing of options this app accepts.
+...
 
 ## Examples
 
@@ -30,7 +28,7 @@ FIXME: listing of options this app accepts.
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Kelvin Smith
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
