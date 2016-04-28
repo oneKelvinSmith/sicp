@@ -15,5 +15,6 @@
   (sum-of-squares (+ a 1) (* a 2)))
 
 (defn abs [n]
-  (cond (neg? n) (- n)
-        :else n))
+  (if (neg? n)
+    (- n)
+    n))
