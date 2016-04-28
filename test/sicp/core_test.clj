@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [sicp.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest main-prints-to-stdout
+  (testing "main prints out"
+    (is (= (-main) (println "Hello, World!")))))
