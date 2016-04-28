@@ -22,3 +22,8 @@
     (is (= (abs 1) 1))
     (is (= (abs 0) 0))
     (is (= (abs -1) 1))))
+
+(deftest >=-test
+  (testing "an number is greater than or equal to another"
+    (not (>= 1 2))
+    (is (>= 3 2))))

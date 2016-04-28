@@ -12,3 +12,6 @@
   (if (neg? n)
     (- n)
     n))
+
+(defn >= [x y]
+  (not (< x y)))
