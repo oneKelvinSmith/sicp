@@ -13,3 +13,8 @@
 
 (defn f [a]
   (sum-of-squares (+ a 1) (* a 2)))
+
+(defn abs [n]
+  (cond (pos? n) n
+        (zero? n) 0
+        (neg? n) (- n)))
