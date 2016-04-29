@@ -23,3 +23,6 @@
      (and (> a c) (> c b))
      (and (> c a) (> a b))) (sum-of-squares a c)
     :else (sum-of-squares b c)))
+
+(defn a-plus-abs-b [a b]
+  ((if (> b 0) + -) a b))

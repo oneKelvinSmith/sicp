@@ -40,3 +40,9 @@
   (testing "sum of squares of largest two out of three numbers"
     (is (= (sum-of-squares-of-largest-two-of-three 1 2 3) 13))
     (is (= (sum-of-squares-of-largest-two-of-three 4 2 5) 41))))
+
+(deftest exercise-1-4-test
+  (testing "a plus abs b behavior"
+    (is (= (a-plus-abs-b 2 2) 4))
+    (is (= (a-plus-abs-b (- 12) 0) (- 12)))
+    (is (= (a-plus-abs-b 0 (- 42)) 42))))
