@@ -46,3 +46,7 @@
     (is (= (a-plus-abs-b 2 2) 4))
     (is (= (a-plus-abs-b (- 12) 0) (- 12)))
     (is (= (a-plus-abs-b 0 (- 42)) 42))))
+
+(deftest exercise-1-5-test
+  (testing "applicative order: infinite recursion, normal order: 0"
+    (is (thrown? StackOverflowError (test 0 (p))))))
