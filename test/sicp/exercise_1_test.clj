@@ -57,3 +57,16 @@
     (is (= (new-if (= 1 1) 0 5) 0)))
   (testing "sqrt-with-new-if will recurse infinitely as cond uses applicative order"
     (is (thrown? StackOverflowError (sqrt-with-new-if 16)))))
+
+(deftest exercise-1-7-test
+  (testing "sqrt of small number (0.00042) is out of tolerance (0.001)"
+    (is (not (< (- (sqrt (square 0.00042))
+                   0.00042)
+                0.001))))
+  (testing "sqrt of large number overflows because precision is too fine"
+    (is (thrown? StackOverflowError (sqrt 42424242424242424242424242424242424))))
+  (testing "alternative good enough function"
+    (is (< (- (sqrt-improved (square 0.00042))
+                   0.00042)
+                0.001))
+    ))
