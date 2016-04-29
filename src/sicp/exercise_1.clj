@@ -33,3 +33,17 @@
   (if (= x 0)
     0
     y))
+
+(defn new-if [predicate
+              then-clause
+              else-clause]
+  (cond predicate then-clause
+        :else else-clause))
+
+(defn sqrt-iter-guess-with-new-if [guess x]
+  (new-if (good-enough? guess x)
+    guess
+    (sqrt-iter-guess-with-new-if (improve guess x) x)))
+
+(defn sqrt-with-new-if [x]
+  (sqrt-iter-guess-with-new-if 1.0 x))

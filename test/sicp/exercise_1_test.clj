@@ -50,3 +50,10 @@
 (deftest exercise-1-5-test
   (testing "applicative order: infinite recursion, normal order: 0"
     (is (thrown? StackOverflowError (test 0 (p))))))
+
+(deftest exercise-1-6-test
+  (testing "a new if"
+    (is (= (new-if (= 2 3) 0 5) 5))
+    (is (= (new-if (= 1 1) 0 5) 0)))
+  (testing "sqrt-with-new-if will recurse infinitely as cond uses applicative order"
+    (is (thrown? StackOverflowError (sqrt-with-new-if 16)))))
