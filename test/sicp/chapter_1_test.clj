@@ -27,3 +27,11 @@
   (testing "an number is greater than or equal to another"
     (not (>= 1 2))
     (is (>= 3 2))))
+
+(deftest sqrt-test
+  (testing "the square root of a number"
+    (is (= (sqrt 9) 3.00009155413138))
+    (is (= (sqrt (+ 100 37)) 11.704699917758145))
+    (is (= (sqrt (+ (sqrt 2) (sqrt 3))) 1.7739279023207892))
+    (is (= (square (sqrt 1000)) 1000.000369924366))
+    ))
