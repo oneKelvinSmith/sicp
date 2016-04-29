@@ -30,3 +30,13 @@
               (+ a 1))
            16))
     ))
+
+(deftest exercise-1-2-test
+  (testing "translationg of formula"
+    (is (= formula (- 37/150)))))
+
+
+(deftest exercise-1-3-test
+  (testing "sum of squares of largest two out of three numbers"
+    (is (= (sum-of-squares-of-largest-two-of-three 1 2 3) 13))
+    (is (= (sum-of-squares-of-largest-two-of-three 4 2 5) 41))))
