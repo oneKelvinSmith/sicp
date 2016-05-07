@@ -1,5 +1,5 @@
 (ns sicp.exercise-1-3
-  (:require  [sicp.chapter-1 :refer [sum-of-squares]]))
+  (:require  [sicp.chapter-1-1 :refer [sum-of-squares]]))
 
 
 (defn sum-of-squares-of-largest-two-of-three [a b c]

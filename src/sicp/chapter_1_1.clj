@@ -1,4 +1,4 @@
-(ns sicp.chapter-1)
+(ns sicp.chapter-1-1)
 
 (defn square [n] (* n n))
 

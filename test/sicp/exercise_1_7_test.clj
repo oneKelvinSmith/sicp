@@ -1,7 +1,7 @@
 (ns sicp.exercise-1-7-test
   (:require  [clojure.test :refer :all]
              [sicp.exercise-1-7 :refer :all]
-             [sicp.chapter-1 :refer [square sqrt]]))
+             [sicp.chapter-1-1 :refer [square sqrt]]))
 
 (deftest exercise-1-7-test
   (testing "sqrt of small number (0.00042) is out of tolerance (0.001)"

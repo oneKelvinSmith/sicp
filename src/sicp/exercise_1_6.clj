@@ -1,5 +1,11 @@
 (ns sicp.exercise-1-6
-  (:require  [sicp.chapter-1 :refer [good-enough? improve]]))
+  (:require  [sicp.chapter-1-1 :refer [average square abs]]))
+
+(defn good-enough? [guess x]
+  (< (abs (- (square guess) x)) 0.001))
+
+(defn improve [guess x]
+  (average guess (/ x guess)))
 
 (defn new-if [predicate
               then-clause

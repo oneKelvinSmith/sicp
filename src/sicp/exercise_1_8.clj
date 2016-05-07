@@ -1,5 +1,5 @@
 (ns sicp.exercise-1-8
-  (:require  [sicp.chapter-1 :refer [square abs]]))
+  (:require  [sicp.chapter-1-1 :refer [square abs]]))
 
 (defn improve [guess n]
   (/ (+ (/ n

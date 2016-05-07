@@ -1,5 +1,9 @@
 (ns sicp.exercise-1-7
-  (:require  [sicp.chapter-1 :refer [improve abs]]))
+  (:require  [sicp.chapter-1-1 :refer [average square abs]]))
+
+(defn improve [guess x]
+  (average guess (/ x guess)))
+
 
 (defn good-enough-improved? [previous-guess guess]
   (< (abs (- previous-guess guess))

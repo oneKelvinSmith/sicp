@@ -1,6 +1,6 @@
-(ns sicp.chapter-1-test
+(ns sicp.chapter-1-1-test
   (:require  [clojure.test :refer :all]
-             [sicp.chapter-1 :refer :all]))
+             [sicp.chapter-1-1 :refer :all]))
 
 (deftest square-test
   (testing "square of a number"
