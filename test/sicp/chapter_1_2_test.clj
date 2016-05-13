@@ -20,3 +20,24 @@
     (is (= (fib 4) 3))
     (is (= (fib 5) 5))
     (is (= (fib 6) 8))))
+
+(deftest count-change-test
+  (testing "the number of ways to make change"
+    (is (= (count-change 0) 1))
+    (is (= (count-change (- 42)) 0))
+    (is (= (count-change 100) 292))))
+
+(deftest cc-test
+  (testing "the number of ways to make change"
+    (is (= (cc 0 1) 1))
+    (is (= (cc (- 42) 42) 0))
+    (is (= (cc 42 0) 0))
+    (is (= (cc 100 5) 292))))
+
+(deftest first-denomination-test
+  (testing "the denomination data"
+    (is (= (first-denomination 1) 1))
+    (is (= (first-denomination 2) 5))
+    (is (= (first-denomination 3) 10))
+    (is (= (first-denomination 4) 25))
+    (is (= (first-denomination 5) 50))))
