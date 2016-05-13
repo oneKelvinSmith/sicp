@@ -35,4 +35,6 @@
                      kinds-of-coins))))
 
 (defn count-change [amount]
+  "Need to come back to this to make it iterative
+   http://c2.com/cgi/wiki?SicpIterationExercise"
   (cc amount 5))
