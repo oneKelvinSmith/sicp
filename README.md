@@ -1,10 +1,10 @@
-# sicp
+# SICP in Clojure
 
-A place to work through the examples in SICP
+A place to work through the examples in SICP with Clojure
 
 ## Installation
 
-Download from https://github.com/oneKelvinSmith/sicp
+Download from https://github.com/oneKelvinSmith/sicp_clojure
 
 ## Usage
 ...
